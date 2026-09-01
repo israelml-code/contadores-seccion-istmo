@@ -1540,3 +1540,97 @@ ul {
     .fb-feed-events       { border-left: none; border-top: 1px solid #E5E7EB; }
     .fb-live-header       { flex-direction: column; text-align: center; }
 }
+
+/* =============================================
+   SECCIÓN RELACIÓN DE ASOCIADOS
+   ============================================= */
+.asociados-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.asociado-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #8B0000;
+    padding: 1rem 1rem 1rem 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.asociado-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(139,0,0,0.13);
+    border-left-color: #C9A84C;
+}
+
+.asociado-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgba(139,0,0,0.18);
+    min-width: 32px;
+    line-height: 1;
+}
+
+.asociado-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.asociado-titulo {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #8B0000;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(139,0,0,0.07);
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.asociado-nombre {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #1A0B0D;
+    line-height: 1.3;
+}
+
+.asociados-total {
+    text-align: center;
+    background: linear-gradient(135deg, #1A0B0D, #3D1010);
+    color: #fff;
+    padding: 1.2rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.asociados-total strong {
+    color: #C9A84C;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (max-width: 1024px) {
+    .asociados-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+    .asociados-grid { grid-template-columns: repeat(2, 1fr); }
+    .asociados-total { flex-direction: column; gap: 0.4rem; }
+}
+@media (max-width: 480px) {
+    .asociados-grid { grid-template-columns: 1fr; }
+}

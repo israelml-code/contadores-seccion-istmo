@@ -1884,3 +1884,134 @@ ul {
     .videos-cta-btns { width: 100%; }
     .videos-btn-primary, .videos-btn-outline { width: 100%; }
 }
+
+/* === VIDEO THUMBNAILS GRID === */
+.video-thumbs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.video-thumb-card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-thumb-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 36px rgba(139,0,0,0.35);
+}
+
+.video-thumb-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.video-thumb-card:hover img {
+    transform: scale(1.08);
+}
+
+/* Overlay oscuro sobre la foto */
+.video-thumb-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 40%, rgba(0,0,0,0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: background 0.3s;
+}
+
+.video-thumb-card:hover .video-thumb-overlay {
+    background: linear-gradient(to top, rgba(139,0,0,0.8) 30%, rgba(0,0,0,0.4) 100%);
+}
+
+/* Overlay sólido para la tarjeta de Facebook */
+.video-thumb-overlay-solid {
+    background: linear-gradient(135deg, #1877F2, #0d5fcc) !important;
+}
+.video-thumb-card:hover .video-thumb-overlay-solid {
+    background: linear-gradient(135deg, #0d6fd8, #0a50aa) !important;
+}
+
+/* Botón play circular */
+.video-play-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    border: 2px solid rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    backdrop-filter: blur(4px);
+}
+
+.video-thumb-card:hover .video-play-btn {
+    background: #8B0000;
+    border-color: #C9A84C;
+    transform: scale(1.15);
+}
+
+.video-play-btn-lg {
+    width: 68px;
+    height: 68px;
+}
+
+/* Info de texto en la miniatura */
+.video-thumb-info {
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.video-thumb-tag {
+    display: inline-block;
+    background: rgba(201,168,76,0.25);
+    color: #C9A84C;
+    border: 1px solid rgba(201,168,76,0.5);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50px;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.5px;
+}
+
+.video-thumb-info p {
+    color: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.video-thumb-fb-link {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.75rem;
+    margin-top: 0.4rem;
+}
+
+/* Tercera tarjeta (Facebook) sin imagen */
+.video-thumb-fb {
+    background: #1877F2;
+}
+
+@media (max-width: 768px) {
+    .video-thumbs-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+    .video-thumb-card { aspect-ratio: 16/9; }
+}

@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio de Profesionales de la Contaduría de Oaxaca A.C. – Sección Istmo</title>
+    <meta name="description" content="Colegio de Profesionales de la Contaduría de Oaxaca A.C. – Sección Istmo. Celebrando 25 años de trayectoria profesional en Salina Cruz, Oaxaca.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SVG Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- SDK oficial de Facebook (para el feed en vivo) -->
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0">
+    </script>
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+
+    <!-- Navbar -->
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Contadores Sección Istmo – 25 Aniversario" class="navbar-logo-img">
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <i data-lucide="menu"></i>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#eventos" class="nav-link">Eventos</a></li>
+                <li><a href="#aniversario" class="nav-link">25 Aniversario</a></li>
+                <li><a href="#contacto" class="btn-primary">Contáctanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <canvas id="hero-particles"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text-wrapper reveal">
+                <div class="hero-logo-wrap">
+                    <img src="logo.png" alt="Contadores Sección Istmo 25 Aniversario" class="hero-logo-img">
+                </div>
+                <h1 class="hero-title">Colegio de Profesionales de la Contaduría de Oaxaca A.C.</h1>
+                <div class="hero-seccion-istmo">Sección Istmo</div>
+                <p class="hero-subtitle">Salina Cruz, Oaxaca · 25 años impulsando la profesión contable<br>con ética, capacitación y compromiso gremial.</p>
+                <div class="hero-buttons">
+                    <a href="#eventos" class="btn-primary">Próximos Eventos</a>
+                    <a href="#nosotros" class="btn-outline">Conoce Más</a>
+                </div>
+            </div>
+            
+            <div class="stats-container reveal">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="25">0</h3>
+                    <p class="stat-label">Años de Trayectoria</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="1200">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p class="stat-label">Seguidores</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="100">0</h3>
+                    <span class="stat-plus">+</span>
+                    <p class="stat-label">Eventos Realizados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="about section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Sobre <span class="text-maroon">Nosotros</span></h2>
+                <p class="section-desc">El <strong>Colegio de Profesionales de la Contaduría de Oaxaca A.C. – Sección Istmo</strong> es la máxima representación gremial de los contadores públicos en la región del Istmo de Tehuantepec. Desde nuestra fundación, trabajamos para elevar la calidad y el prestigio de la profesión contable en Salina Cruz, Oaxaca y toda la región.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="card-icon"><i data-lucide="target"></i></div>
+                    <h3>Misión</h3>
+                    <p>Representar, capacitar y defender los intereses de los profesionales de la contaduría pública en el Istmo de Tehuantepec, promoviendo el cumplimiento de los más altos estándares éticos y técnicos, y contribuyendo al desarrollo económico y social de la región mediante la actualización permanente y la solidaridad gremial.</p>
+                </div>
+                <div class="about-card reveal" style="transition-delay: 100ms;">
+                    <div class="card-icon"><i data-lucide="eye"></i></div>
+                    <h3>Visión</h3>
+                    <p>Ser la institución líder y referente de la contaduría pública en el sur-sureste de México, reconocida por la excelencia técnica de sus agremiados, la solidez de su programa de capacitación continua, su compromiso ético irrenunciable y su impacto positivo en el desarrollo económico de las empresas y personas de la región istmeña.</p>
+                </div>
+                <div class="about-card reveal" style="transition-delay: 200ms;">
+                    <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Valores</h3>
+                    <p><strong>Integridad:</strong> Actuamos con honestidad y transparencia en todo momento. <strong>Competencia Profesional:</strong> Buscamos la excelencia técnica y la actualización constante. <strong>Objetividad:</strong> Emitimos juicios imparciales basados en evidencia. <strong>Confidencialidad:</strong> Resguardamos la información de nuestros clientes. <strong>Comportamiento Profesional:</strong> Cumplimos las normas y reglamentos vigentes con orgullo.</p>
+                </div>
+            </div>
+
+            <!-- Bloque adicional: ¿Por qué afiliarse? -->
+            <div class="about-extra reveal" style="margin-top:3rem;background:#fff8f8;border-left:4px solid #8B0000;border-radius:12px;padding:2rem 2.5rem;">
+                <h3 style="color:#8B0000;font-family:'Playfair Display',serif;margin-bottom:1rem;">¿Por qué afiliarte al Colegio?</h3>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                    <div><p>✅ <strong>Respaldo institucional</strong> ante el SAT y autoridades fiscales</p></div>
+                    <div><p>✅ <strong>Acceso a capacitación</strong> con precios preferenciales para asociados</p></div>
+                    <div><p>✅ <strong>Red de contactos</strong> con los mejores profesionistas de la región</p></div>
+                    <div><p>✅ <strong>Certificación y acreditación</strong> profesional reconocida a nivel nacional</p></div>
+                    <div><p>✅ <strong>Representación gremial</strong> ante organismos públicos y privados</p></div>
+                    <div><p>✅ <strong>Actualización permanente</strong> en materia fiscal, financiera y de auditoría</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services section dark-bg">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="section-title text-white">Nuestros <span class="text-gold">Servicios</span></h2>
+                <p class="section-desc text-light">El Colegio de Profesionales de la Contaduría de Oaxaca A.C. – Sección Istmo ofrece un amplio catálogo de servicios diseñados para el crecimiento profesional, la actualización técnica y la defensa gremial de todos nuestros asociados y de la comunidad contable del Istmo de Tehuantepec.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-number">01</div>
+                    <h3>Capacitación Continua</h3>
+                    <p>Organizamos cursos, talleres, diplomados y seminarios especializados en temas fiscales, financieros, auditoría, derecho corporativo y normas de información financiera (NIF). Nuestros programas están diseñados para mantener a nuestros asociados a la vanguardia de los cambios normativos y legislativos que afectan su ejercicio profesional.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 100ms;">
+                    <div class="service-number">02</div>
+                    <h3>Agremiación Profesional</h3>
+                    <p>Al unirte al Colegio formas parte de la red de profesionales de la contaduría más sólida del sur-sureste de México. Obtienes respaldo institucional, credencial que acredita tu membresía activa, representación ante organismos nacionales e internacionales, y acceso a beneficios exclusivos para asociados.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 200ms;">
+                    <div class="service-number">03</div>
+                    <h3>Conferencias y Congresos</h3>
+                    <p>Realizamos eventos de alto nivel académico con ponentes de talla nacional e internacional. Nuestros congresos abordan la actualidad económica, fiscal y contable del país, ofreciendo un espacio de networking, actualización y reflexión para todos los profesionales de la región.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 300ms;">
+                    <div class="service-number">04</div>
+                    <h3>Defensa Gremial</h3>
+                    <p>Representamos los intereses colectivos de los contadores públicos ante autoridades fiscales, hacendarias, gubernamentales y judiciales. Gestionamos ante el SAT, IMSS, INFONAVIT y otras dependencias para proteger el ejercicio legal y ético de nuestra profesión en la región del Istmo.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 400ms;">
+                    <div class="service-number">05</div>
+                    <h3>Asesoría Fiscal</h3>
+                    <p>A través de nuestros asociados certificados, brindamos orientación especializada en la interpretación y correcta aplicación del Código Fiscal de la Federación, la Ley del ISR, IVA, IMSS y demás disposiciones fiscales vigentes para empresas y personas físicas de la región.</p>
+                </div>
+                <div class="service-card reveal" style="transition-delay: 500ms;">
+                    <div class="service-number">06</div>
+                    <h3>Vinculación Empresarial</h3>
+                    <p>Fomentamos alianzas estratégicas entre profesionales contables certificados, empresas, cámaras de comercio e instituciones educativas y gubernamentales de la región. Generamos oportunidades de desarrollo, empleo y colaboración que benefician a todo el ecosistema empresarial del Istmo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos & Eventos Section (Rediseño Dinámico) -->
+    <section id="eventos" class="events section light-bg">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag-label">📚 Capacitación Profesional</span>
+                <h2 class="section-title">Nuestros <span class="text-maroon">Cursos y Eventos</span></h2>
+                <p class="section-desc">Fotos, videos y momentos reales de nuestras jornadas de capacitación en el Istmo de Tehuantepec.</p>
+            </div>
+
+            <!-- EVENTO DESTACADO con foto real -->
+
+            <!-- ====================================================
+                 📡 FEED EN VIVO DE FACEBOOK – @seccionistmo
+                 Se actualiza automáticamente con cada publicación
+                 ==================================================== -->
+            <div class="fb-live-feed-wrap reveal">
+                <div class="fb-live-header">
+                    <div class="fb-live-icon">
+                        <svg viewBox="0 0 24 24" fill="#1877F2" width="32" height="32"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </div>
+                    <div class="fb-live-title">
+                        <strong>Publicaciones en tiempo real</strong>
+                        <span>Todo lo que publican en <a href="https://www.facebook.com/seccionistmo" target="_blank">@seccionistmo</a> aparece aquí automáticamente</span>
+                    </div>
+                    <a href="https://www.facebook.com/seccionistmo" target="_blank" class="fb-follow-btn">
+                        👍 Seguir página
+                    </a>
+                </div>
+
+                <div class="fb-page-feed-grid">
+                    <div class="fb-feed-main">
+                        <p class="fb-feed-tab-label">📰 Últimas publicaciones</p>
+                        <div class="fb-page"
+                            data-href="https://www.facebook.com/seccionistmo"
+                            data-tabs="timeline"
+                            data-width="600"
+                            data-height="680"
+                            data-small-header="false"
+                            data-adapt-container-width="true"
+                            data-hide-cover="false"
+                            data-show-facepile="true">
+                        </div>
+                    </div>
+                    <div class="fb-feed-events">
+                        <p class="fb-feed-tab-label">📅 Próximos eventos</p>
+                        <div class="fb-page"
+                            data-href="https://www.facebook.com/seccionistmo"
+                            data-tabs="events"
+                            data-width="380"
+                            data-height="680"
+                            data-small-header="true"
+                            data-adapt-container-width="true"
+                            data-hide-cover="true"
+                            data-show-facepile="false">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fb-live-note">
+                    💡 <strong>¿Cómo funciona?</strong> Este bloque está conectado directamente con la página de Facebook <strong>@seccionistmo</strong>. Cada vez que publiquen un curso, evento o foto allá, aparecerá aquí automáticamente — sin necesidad de editar la página web.
+                </div>
+            </div>
+            <!-- FIN FEED EN VIVO DE FACEBOOK -->
+
+            <!-- EVENTO DESTACADO con foto real -->
+            <div class="featured-event reveal">
+
+                <div class="featured-event-media">
+                    <img src="foto_seminario1.png" alt="Seminario Disolución y Liquidación de Sociedades Mercantiles – CANACO Salina Cruz" class="featured-img">
+                    <div class="featured-badge">⭐ Evento Destacado</div>
+                </div>
+                <div class="featured-event-info">
+                    <span class="event-category-pill">📋 Seminario Jurídico-Contable</span>
+                    <h3>Disolución y Liquidación de Sociedades Mercantiles</h3>
+                    <p>Seminario impartido en las instalaciones de <strong>CANACO Salina Cruz</strong>. Nuestros asociados y asistentes recibieron formación especializada en derecho corporativo aplicado a la contaduría pública.</p>
+                    <div class="feat-meta-row">
+                        <span class="feat-meta"><span class="meta-icon">📍</span> CANACO Salina Cruz</span>
+                        <span class="feat-meta"><span class="meta-icon">👥</span> +30 asistentes</span>
+                        <span class="feat-meta"><span class="meta-icon">🕓</span> 16:00 – 20:00 hrs</span>
+                    </div>
+                    <a href="https://www.facebook.com/seccionistmo" target="_blank" class="btn-primary" style="display:inline-block;margin-top:1rem;">Ver más en Facebook →</a>
+                </div>
+            </div>
+
+            <!-- VIDEO DE FACEBOOK EMBEBIDO -->
+            <div class="section-sub-title reveal">
+                <h3>🎬 Videos de Nuestras Actividades</h3>
+                <p>Mira los videos de nuestros cursos directamente desde Facebook</p>
+            </div>
+            <div class="videos-grid reveal">
+                <div class="fb-video-card">
+                    <div class="fb-video-embed-wrap">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fseccionistmo%2Fvideos%2F&show_text=false&width=560&t=0"
+                            width="100%" height="260"
+                            style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="fb-video-info">
+                        <span class="event-category-pill small">🎥 Video en vivo</span>
+                        <p>Actividades y cursos de capacitación continua</p>
+                        <a href="https://www.facebook.com/seccionistmo" target="_blank" class="fb-link">Ver en Facebook ↗</a>
+                    </div>
+                </div>
+                <div class="fb-video-card">
+                    <div class="fb-video-embed-wrap">
+                        <iframe
+                            src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fseccionistmo%2Fvideos%2F1CzYw74W3F%2F&show_text=false&width=560&t=0"
+                            width="100%" height="260"
+                            style="border:none;overflow:hidden"
+                            scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
+                    <div class="fb-video-info">
+                        <span class="event-category-pill small">🎥 Transmisión</span>
+                        <p>Seminario profesional – Sección Istmo</p>
+                        <a href="https://www.facebook.com/share/v/1CzYw74W3F/" target="_blank" class="fb-link">Ver en Facebook ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERÍA DE FOTOS con fotos reales -->
+            <div class="section-sub-title reveal" style="margin-top:3.5rem;">
+                <h3>📸 Galería de Eventos</h3>
+                <p>Momentos reales de nuestras jornadas de capacitación</p>
+            </div>
+            <div class="photo-gallery reveal">
+                <div class="gallery-item gallery-large">
+                    <img src="foto_seminario1.png" alt="Seminario Disolución y Liquidación – CANACO Salina Cruz">
+                    <div class="gallery-overlay">
+                        <span>Seminario en CANACO Salina Cruz</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="foto_seminario2.png" alt="Capacitación Contadores Istmo">
+                    <div class="gallery-overlay">
+                        <span>Capacitación Sección Istmo</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="logo.png" alt="25 Aniversario Sección Istmo" style="object-fit:contain;background:#1A0B0D;padding:1rem;">
+                    <div class="gallery-overlay">
+                        <span>25 Aniversario – Sección Istmo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRÓXIMOS CURSOS - tarjetas mejoradas -->
+            <div class="section-sub-title reveal" style="margin-top:3.5rem;">
+                <h3>📅 Próximos Cursos</h3>
+                <p>Inscríbete y mantente actualizado</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card reveal">
+                    <div class="course-header" style="background: linear-gradient(135deg, #8B0000, #5C0000);">
+                        <div class="course-date-badge">Oct<br><strong>15</strong></div>
+                        <span class="course-type">Seminario</span>
+                    </div>
+                    <div class="course-body">
+                        <h4>Disolución y Liquidación de Sociedades Mercantiles</h4>
+                        <div class="course-details">
+                            <span>📍 CANACO Salina Cruz</span>
+                            <span>🕓 16:00 – 20:00 hrs</span>
+                            <span>👤 Presencial</span>
+                        </div>
+                        <a href="https://www.facebook.com/seccionistmo" target="_blank" class="btn-primary" style="display:block;text-align:center;margin-top:1rem;">Más información</a>
+                    </div>
+                </div>
+                <div class="course-card reveal" style="transition-delay:150ms;">
+                    <div class="course-header" style="background: linear-gradient(135deg, #1A0B0D, #3D1A1A);">
+                        <div class="course-date-badge">Nov<br><strong>05</strong></div>
+                        <span class="course-type">Taller</span>
+                    </div>
+                    <div class="course-body">
+                        <h4>Actualización en Normas de Información Financiera (NIF)</h4>
+                        <div class="course-details">
+                            <span>💻 Modalidad Virtual</span>
+                            <span>🕓 09:00 – 14:00 hrs</span>
+                            <span>👤 En línea</span>
+                        </div>
+                        <a href="https://www.facebook.com/seccionistmo" target="_blank" class="btn-primary" style="display:block;text-align:center;margin-top:1rem;">Más información</a>
+                    </div>
+                </div>
+                <div class="course-card reveal" style="transition-delay:300ms;">
+                    <div class="course-header" style="background: linear-gradient(135deg, #5C0000, #8B2020);">
+                        <div class="course-date-badge">Dic<br><strong>12</strong></div>
+                        <span class="course-type">Conferencia</span>
+                    </div>
+                    <div class="course-body">
+                        <h4>Reforma Fiscal 2025: Impactos y Estrategias para el Contribuyente</h4>
+                        <div class="course-details">
+                            <span>📍 Hotel Misión, Salina Cruz</span>
+                            <span>🕓 10:00 – 15:00 hrs</span>
+                            <span>👤 Presencial</span>
+                        </div>
+                        <a href="https://www.facebook.com/seccionistmo" target="_blank" class="btn-primary" style="display:block;text-align:center;margin-top:1rem;">Más información</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Facebook -->
+            <div class="events-fb-cta reveal">
+                <div class="fb-cta-inner">
+                    <div class="fb-cta-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="40" height="40"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                    </div>
+                    <div class="fb-cta-text">
+                        <h4>¿No te quieres perder ningún evento?</h4>
+                        <p>Síguenos en Facebook para estar al tanto de todos nuestros cursos, seminarios y transmisiones en vivo.</p>
+                    </div>
+                    <a href="https://www.facebook.com/seccionistmo" target="_blank" class="btn-primary fb-cta-btn">Seguir en Facebook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 25 Aniversario Section -->
+    <section id="aniversario" class="anniversary section dark-bg-2">
+        <div class="anniversary-rings">
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+        </div>
+        <div class="container">
+            <div class="anniversary-content reveal">
+                <div class="big-25">25</div>
+                <h2 class="section-title text-white">Años de Historia y Excelencia</h2>
+                <p class="anniversary-desc">Un cuarto de siglo impulsando el desarrollo profesional contable en el Istmo de Tehuantepec. Desde 1999, el Colegio de Profesionales de la Contaduría de Oaxaca A.C. – Sección Istmo ha sido el pilar institucional que agrupa, representa y capacita a los contadores públicos de Salina Cruz y toda la región istmeña.</p>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">1999</div>
+                        <div class="timeline-text">
+                            <h4>Fundación</h4>
+                            <p>Nace el Colegio de Profesionales de la Contaduría de Oaxaca A.C. – Sección Istmo en Salina Cruz, Oaxaca, como respuesta a la necesidad de contar con una instancia gremial sólida que representara los intereses de los contadores públicos de la región ante autoridades y organismos nacionales.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2005</div>
+                        <div class="timeline-text">
+                            <h4>Primeros Congresos Regionales</h4>
+                            <p>Organización de los primeros magnos eventos fiscales y contables de la región, con la participación de ponentes nacionales e internacionales. Estos eventos posicionaron al Colegio como referente académico en el Istmo y el sur del país.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2015</div>
+                        <div class="timeline-text">
+                            <h4>Expansión y Consolidación</h4>
+                            <p>Crecimiento sostenido en el número de asociados activos y consolidación del programa de capacitación continua. Se fortalecieron los vínculos con el IMCP nacional, CANACO, CANACINTRA y otras cámaras empresariales de la región del Istmo de Tehuantepec.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-text">
+                            <h4>🎉 25 Aniversario</h4>
+                            <p>Celebración de 25 años de excelencia, ética y compromiso gremial ininterrumpidos. Un logro que es el resultado del trabajo colectivo de todos nuestros asociados, expresidentes y colaboradores que han construido esta institución a lo largo de un cuarto de siglo al servicio de la profesión contable en Oaxaca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h2 class="section-title">Ponte en <span class="text-maroon">Contacto</span></h2>
+                    <p class="section-desc">¿Tienes dudas sobre nuestros eventos, membresías o necesitas asesoría? Escríbenos.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>Salina Cruz, Oaxaca, México</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="facebook"></i>
+                            <div>
+                                <h4>Facebook</h4>
+                                <a href="https://facebook.com/seccionistmo" target="_blank">facebook.com/seccionistmo</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Correo</h4>
+                                <a href="mailto:contacto@imcpistmo.mx">contacto@imcpistmo.mx</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container reveal" style="transition-delay: 200ms;">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="" disabled selected>Selecciona un asunto...</option>
+                                <option value="afiliacion">Información de Afiliación</option>
+                                <option value="eventos">Inscripción a Eventos</option>
+                                <option value="dudas">Dudas Generales</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary form-submit">Enviar Mensaje</button>
+                        <div id="form-message" class="form-message hidden">¡Gracias! Tu mensaje ha sido enviado correctamente.</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo footer-logo">
+                    <img src="logo.png" alt="Colegio de Profesionales de la Contaduría de Oaxaca A.C." style="height:60px;width:auto;">
+                </a>
+                <p><strong>Colegio de Profesionales de la Contaduría de Oaxaca A.C.</strong><br>Sección Istmo &ndash; Salina Cruz, Oaxaca, México.</p>
+                <a href="https://facebook.com/seccionistmo" class="social-btn" target="_blank" aria-label="Facebook">
+                    <i data-lucide="facebook"></i>
+                </a>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Institución</h4>
+                <ul>
+                    <li><a href="#">IMCP Nacional</a></li>
+                    <li><a href="#">Código de Ética</a></li>
+                    <li><a href="#">Estatutos</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Contadores Sección Istmo Salina Cruz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

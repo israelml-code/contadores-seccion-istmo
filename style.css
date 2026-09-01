@@ -181,25 +181,25 @@ ul {
     transform: scale(1.04);
 }
 
-/* Logo grande en el hero */
+/* Logo en el hero - tamaño controlado */
 .hero-logo-wrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     animation: floatLogo 4s ease-in-out infinite;
 }
 
 .hero-logo-img {
-    width: 260px;
-    max-width: 80vw;
+    width: 130px;
+    max-width: 40vw;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 8px 32px rgba(201,168,76,0.35)) drop-shadow(0 2px 8px rgba(0,0,0,0.6));
+    filter: drop-shadow(0 4px 16px rgba(201,168,76,0.3)) drop-shadow(0 2px 8px rgba(0,0,0,0.5));
 }
 
 @keyframes floatLogo {
     0%, 100% { transform: translateY(0px); }
-    50%       { transform: translateY(-10px); }
+    50%       { transform: translateY(-6px); }
 }
 
 .nav-links {
@@ -1352,7 +1352,7 @@ ul {
     }
 
     .hero-logo-img {
-        width: 180px !important;
+        width: 90px !important;
     }
 
     .hero-title {

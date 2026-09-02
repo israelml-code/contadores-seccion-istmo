@@ -2015,3 +2015,282 @@ ul {
     .video-thumbs-grid { grid-template-columns: 1fr; gap: 0.8rem; }
     .video-thumb-card { aspect-ratio: 16/9; }
 }
+
+/* ================================================
+   BANNER CTA REGISTRO
+   ================================================ */
+.registro-cta-banner {
+    background: linear-gradient(135deg, #5C0000, #8B0000);
+    border-radius: 16px;
+    padding: 1.8rem 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2.5rem 0;
+    box-shadow: 0 8px 32px rgba(139,0,0,0.3);
+    border: 1px solid rgba(201,168,76,0.2);
+}
+.registro-cta-left { display: flex; align-items: center; gap: 1.2rem; flex: 1; min-width: 240px; }
+.registro-cta-icon { font-size: 2.5rem; flex-shrink: 0; }
+.registro-cta-left h3 { color: #fff; font-size: 1.2rem; margin-bottom: 0.3rem; }
+.registro-cta-left p  { color: rgba(255,255,255,0.8); font-size: 0.88rem; line-height: 1.5; }
+.registro-cta-btn {
+    background: #C9A84C;
+    color: #1A0B0D !important;
+    border: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+    transition: all 0.25s;
+    box-shadow: 0 4px 16px rgba(201,168,76,0.4);
+}
+.registro-cta-btn:hover { background: #E8C96A; transform: translateY(-2px) scale(1.03); }
+
+/* ================================================
+   MODAL OVERLAY
+   ================================================ */
+.reg-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    z-index: 9999;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem;
+    overflow-y: auto;
+    backdrop-filter: blur(4px);
+}
+
+.reg-modal-box {
+    background: #fff;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+/* Header del modal */
+.reg-modal-header {
+    background: linear-gradient(135deg, #0D0608, #2E0D10);
+    padding: 1.4rem 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.reg-modal-header-left { display: flex; align-items: center; gap: 1rem; }
+.reg-modal-logo { width: 50px; height: 50px; object-fit: contain; border-radius: 50%; background: rgba(255,255,255,0.1); padding: 4px; }
+.reg-modal-header h2 { color: #fff; font-size: 1.1rem; margin-bottom: 0.1rem; }
+.reg-modal-header p  { color: rgba(255,255,255,0.6); font-size: 0.75rem; }
+.reg-close-btn {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+.reg-close-btn:hover { background: rgba(255,255,255,0.25); }
+
+/* Barra de progreso */
+.reg-progress-bar {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background: #FAF7F5;
+    border-bottom: 1px solid #E5E7EB;
+    gap: 0;
+    position: sticky;
+    top: 73px;
+    z-index: 9;
+}
+.reg-step-indicator { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; }
+.reg-step-circle {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: #E5E7EB;
+    color: #9CA3AF;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.3s;
+}
+.reg-step-circle.active { background: #8B0000; color: #fff; box-shadow: 0 0 0 4px rgba(139,0,0,0.2); }
+.reg-step-circle.done   { background: #C9A84C; color: #fff; }
+.reg-step-indicator span { font-size: 0.65rem; color: #6B7280; font-weight: 600; white-space: nowrap; }
+.reg-step-line {
+    flex: 1;
+    height: 2px;
+    background: #E5E7EB;
+    margin: 0 0.4rem;
+    margin-bottom: 1.2rem;
+    transition: background 0.3s;
+}
+.reg-step-line.done { background: #C9A84C; }
+
+/* Contenido de cada paso */
+.reg-step { padding: 2rem 2rem 1rem; }
+.reg-step-title { margin-bottom: 1.5rem; }
+.reg-step-num  { font-size: 0.75rem; color: #8B0000; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+.reg-step-title h3 { font-size: 1.2rem; color: #1A0B0D; margin-top: 0.3rem; }
+
+/* Grid de campos */
+.reg-fields-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 1.2rem;
+}
+.reg-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.reg-field-full { grid-column: 1 / -1; }
+.reg-field label { font-size: 0.8rem; font-weight: 600; color: #374151; }
+.reg-field input,
+.reg-field select {
+    padding: 0.65rem 0.9rem;
+    border: 1.5px solid #D1D5DB;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    color: #1A0B0D;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+.reg-field input:focus,
+.reg-field select:focus {
+    outline: none;
+    border-color: #8B0000;
+    box-shadow: 0 0 0 3px rgba(139,0,0,0.1);
+}
+
+/* PASO 3: Documentos */
+.reg-docs-intro { font-size: 0.88rem; color: #6B7280; margin-bottom: 1.2rem; line-height: 1.6; }
+.reg-docs-list { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1.5rem; }
+.reg-doc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: #FAF7F5;
+    border: 1px solid #E5E7EB;
+    border-left: 4px solid #8B0000;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+}
+.reg-doc-num {
+    background: #8B0000;
+    color: #fff;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.8rem; font-weight: 700;
+    flex-shrink: 0;
+}
+.reg-doc-item strong { font-size: 0.9rem; color: #1A0B0D; display: block; margin-bottom: 0.2rem; }
+.reg-doc-item p { font-size: 0.8rem; color: #6B7280; margin: 0; }
+
+/* Checkbox */
+.reg-docs-check { margin: 1.2rem 0 0.5rem; }
+.reg-checkbox-label { display: flex; align-items: flex-start; gap: 0.7rem; cursor: pointer; }
+.reg-checkbox-label input[type="checkbox"] { margin-top: 3px; accent-color: #8B0000; width: 16px; height: 16px; flex-shrink: 0; }
+.reg-checkbox-label span { font-size: 0.85rem; color: #374151; line-height: 1.5; }
+
+/* PASO 4: Confirmar */
+.reg-confirm-box {
+    background: linear-gradient(135deg, #FAF7F5, #FFF5E6);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 14px;
+    padding: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.reg-confirm-icon { font-size: 2.5rem; margin-bottom: 0.8rem; }
+.reg-confirm-box h4 { font-size: 1.2rem; color: #1A0B0D; margin-bottom: 0.6rem; }
+.reg-confirm-box p  { font-size: 0.88rem; color: #6B7280; line-height: 1.6; margin-bottom: 0.5rem; }
+.reg-confirm-box strong { color: #8B0000; }
+.reg-confirm-list { list-style: none; text-align: left; display: inline-block; margin-top: 1rem; }
+.reg-confirm-list li { font-size: 0.85rem; color: #374151; padding: 0.3rem 0; }
+
+/* Botones de navegación */
+.reg-nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem 1.8rem;
+    border-top: 1px solid #F3F4F6;
+    gap: 1rem;
+}
+.reg-step-dots { display: flex; gap: 0.5rem; }
+.reg-dot { width: 8px; height: 8px; border-radius: 50%; background: #D1D5DB; transition: all 0.3s; }
+.reg-dot.active { background: #8B0000; width: 24px; border-radius: 4px; }
+
+.reg-btn-anterior, .reg-btn-siguiente, .reg-btn-enviar {
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s;
+}
+.reg-btn-anterior  { background: #F3F4F6; color: #374151; }
+.reg-btn-anterior:hover  { background: #E5E7EB; }
+.reg-btn-siguiente { background: #8B0000; color: #fff; }
+.reg-btn-siguiente:hover { background: #5C0000; transform: translateX(2px); }
+.reg-btn-enviar    { background: #C9A84C; color: #1A0B0D; box-shadow: 0 4px 16px rgba(201,168,76,0.4); }
+.reg-btn-enviar:hover    { background: #E8C96A; transform: scale(1.03); }
+
+/* Pantalla de éxito */
+.reg-success-screen {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    gap: 1rem;
+}
+.reg-success-icon { font-size: 4rem; }
+.reg-success-screen h3 { font-size: 1.5rem; color: #1A0B0D; }
+.reg-success-screen p  { color: #6B7280; max-width: 400px; line-height: 1.6; }
+.reg-success-btn {
+    background: #1877F2; color: #fff !important;
+    padding: 0.75rem 1.8rem; border-radius: 50px;
+    text-decoration: none; font-weight: 700; font-size: 0.9rem;
+    transition: background 0.2s;
+}
+.reg-success-btn:hover { background: #0d6fd8; }
+.reg-btn-cerrar-ok {
+    background: transparent; border: 1.5px solid #D1D5DB;
+    color: #6B7280; padding: 0.6rem 1.5rem;
+    border-radius: 50px; cursor: pointer; font-size: 0.88rem;
+    transition: all 0.2s;
+}
+.reg-btn-cerrar-ok:hover { border-color: #8B0000; color: #8B0000; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .reg-fields-grid { grid-template-columns: 1fr; }
+    .reg-progress-bar { padding: 1rem; gap: 0; }
+    .reg-step-indicator span { font-size: 0.58rem; }
+    .reg-step { padding: 1.2rem 1rem 0.5rem; }
+    .reg-nav-btns { padding: 1rem; }
+    .registro-cta-banner { flex-direction: column; text-align: center; }
+    .registro-cta-left { flex-direction: column; text-align: center; }
+}

@@ -19,6 +19,17 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v19.0">
     </script>
+    <style>
+    /* BANNER CTA REGISTRO - INLINE PARA EVITAR CACHE */
+    .registro-cta-banner { background: linear-gradient(135deg, #5C0000, #8B0000); border-radius: 16px; padding: 1.8rem 2.2rem; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; margin: 2.5rem 0; box-shadow: 0 8px 32px rgba(139,0,0,0.3); border: 1px solid rgba(201,168,76,0.2); }
+    .registro-cta-left { display: flex; align-items: center; gap: 1.2rem; flex: 1; min-width: 240px; }
+    .registro-cta-icon { font-size: 2.5rem; flex-shrink: 0; }
+    .registro-cta-left h3 { color: #fff; font-size: 1.2rem; margin-bottom: 0.3rem; font-family: 'Playfair Display', serif; }
+    .registro-cta-left p  { color: rgba(255,255,255,0.8); font-size: 0.88rem; line-height: 1.5; margin: 0; }
+    .registro-cta-btn { background: #C9A84C; color: #1A0B0D !important; border: none; padding: 0.85rem 1.8rem; border-radius: 50px; font-size: 0.95rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; white-space: nowrap; transition: all 0.25s; box-shadow: 0 4px 16px rgba(201,168,76,0.4); text-decoration: none; }
+    .registro-cta-btn:hover { background: #E8C96A; transform: translateY(-2px) scale(1.03); }
+    @media (max-width: 600px) { .registro-cta-banner { flex-direction: column; text-align: center; } .registro-cta-left { flex-direction: column; text-align: center; } }
+    </style>
 </head>
 
 <body>

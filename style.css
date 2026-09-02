@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --maroon: #8B0000;
     --maroon-dark: #5C0000;
     --gold: #C9A84C;
@@ -181,7 +181,7 @@ ul {
     transform: scale(1.04);
 }
 
-/* Logo en el hero - tamaño controlado */
+/* Logo en el hero - tamaÃ±o controlado */
 .hero-logo-wrap {
     display: flex;
     justify-content: center;
@@ -921,10 +921,10 @@ ul {
 }
 
 /* ========================================
-   SECCIÓN DINÁMICA DE CURSOS Y EVENTOS
+   SECCIÃ“N DINÃMICA DE CURSOS Y EVENTOS
    ======================================== */
 
-/* Etiqueta de sección */
+/* Etiqueta de secciÃ³n */
 .section-tag-label {
     display: inline-block;
     background: linear-gradient(135deg, #8B0000, #C9A84C);
@@ -938,7 +938,7 @@ ul {
     margin-bottom: 1rem;
 }
 
-/* Sub-títulos internos de sección */
+/* Sub-tÃ­tulos internos de secciÃ³n */
 .section-sub-title {
     text-align: center;
     margin: 2.5rem 0 1.5rem;
@@ -1110,7 +1110,7 @@ ul {
     color: var(--gold);
 }
 
-/* ---- GALERÍA DE FOTOS ---- */
+/* ---- GALERÃA DE FOTOS ---- */
 .photo-gallery {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -1290,7 +1290,7 @@ ul {
     white-space: nowrap;
 }
 
-/* Responsive para sección de eventos dinámica */
+/* Responsive para secciÃ³n de eventos dinÃ¡mica */
 @media (max-width: 768px) {
     .featured-event { grid-template-columns: 1fr; }
     .featured-img { min-height: 220px; }
@@ -1302,11 +1302,11 @@ ul {
 }
 
 /* =============================================
-   ESTILOS PARA IMPRESIÓN / PDF
+   ESTILOS PARA IMPRESIÃ“N / PDF
    Hace visible TODO el contenido al imprimir
    ============================================= */
 @media print {
-    /* Mostrar todos los elementos ocultos por animación */
+    /* Mostrar todos los elementos ocultos por animaciÃ³n */
     .reveal,
     .reveal.active,
     [class*="reveal"] {
@@ -1338,7 +1338,7 @@ ul {
         display: none !important;
     }
 
-    /* Ajustar hero para impresión */
+    /* Ajustar hero para impresiÃ³n */
     .hero {
         min-height: auto !important;
         padding: 3rem 2rem 2rem !important;
@@ -1408,7 +1408,7 @@ ul {
     .timeline-year { color: #C9A84C !important; }
     .timeline-year::after { background: #C9A84C !important; }
 
-    /* Fotos de galería */
+    /* Fotos de galerÃ­a */
     .photo-gallery {
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: 200px !important;
@@ -1430,7 +1430,7 @@ ul {
     /* Contacto simplificado */
     .contact-info { width: 100% !important; }
 
-    /* Saltos de página entre secciones grandes */
+    /* Saltos de pÃ¡gina entre secciones grandes */
     #servicios, #aniversario, #contacto {
         page-break-before: always;
     }
@@ -1442,7 +1442,7 @@ ul {
 }
 
 /* =============================================
-   FACEBOOK LIVE FEED – @seccionistmo
+   FACEBOOK LIVE FEED â€“ @seccionistmo
    ============================================= */
 .fb-live-feed-wrap {
     background: #fff;
@@ -1542,7 +1542,7 @@ ul {
 }
 
 /* =============================================
-   SECCIÓN RELACIÓN DE ASOCIADOS
+   SECCIÃ“N RELACIÃ“N DE ASOCIADOS
    ============================================= */
 .asociados-grid {
     display: grid;
@@ -1636,7 +1636,7 @@ ul {
 }
 
 /* =============================================
-   RELACION DE ASOCIADOS - DISEÑO ELEGANTE
+   RELACION DE ASOCIADOS - DISEÃ‘O ELEGANTE
    ============================================= */
 .asociados-section {
     background: linear-gradient(180deg, #0D0608 0%, #1A0B0D 60%, #231216 100%);
@@ -1680,7 +1680,7 @@ ul {
     background: rgba(201,168,76,0.08);
 }
 
-/* Número */
+/* NÃºmero */
 .asoc-n {
     font-family: 'Playfair Display', serif;
     font-size: 0.78rem;
@@ -1689,7 +1689,7 @@ ul {
     font-weight: 700;
 }
 
-/* Etiqueta de título profesional */
+/* Etiqueta de tÃ­tulo profesional */
 .asoc-t {
     font-size: 0.68rem;
     font-weight: 700;
@@ -1939,7 +1939,7 @@ ul {
     background: linear-gradient(to top, rgba(139,0,0,0.8) 30%, rgba(0,0,0,0.4) 100%);
 }
 
-/* Overlay sólido para la tarjeta de Facebook */
+/* Overlay sÃ³lido para la tarjeta de Facebook */
 .video-thumb-overlay-solid {
     background: linear-gradient(135deg, #1877F2, #0d5fcc) !important;
 }
@@ -1947,7 +1947,7 @@ ul {
     background: linear-gradient(135deg, #0d6fd8, #0a50aa) !important;
 }
 
-/* Botón play circular */
+/* BotÃ³n play circular */
 .video-play-btn {
     width: 56px;
     height: 56px;
@@ -2226,7 +2226,7 @@ ul {
 .reg-confirm-list { list-style: none; text-align: left; display: inline-block; margin-top: 1rem; }
 .reg-confirm-list li { font-size: 0.85rem; color: #374151; padding: 0.3rem 0; }
 
-/* Botones de navegación */
+/* Botones de navegaciÃ³n */
 .reg-nav-btns {
     display: flex;
     align-items: center;
@@ -2258,7 +2258,7 @@ ul {
 .reg-btn-enviar    { background: #C9A84C; color: #1A0B0D; box-shadow: 0 4px 16px rgba(201,168,76,0.4); }
 .reg-btn-enviar:hover    { background: #E8C96A; transform: scale(1.03); }
 
-/* Pantalla de éxito */
+/* Pantalla de Ã©xito */
 .reg-success-screen {
     flex-direction: column;
     align-items: center;

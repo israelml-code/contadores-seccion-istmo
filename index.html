@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
     
     <!-- SVG Icons (Lucide) -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -904,6 +904,30 @@
                     document.getElementById('reg-success').style.display = 'flex';
                 } else { alert('Hubo un error. Por favor intenta de nuevo.'); }
             }).catch(() => alert('Error de conexión. Por favor intenta de nuevo.'));
+        });
+
+        // ---- HOVER AVATAR MODAL ----
+        document.addEventListener('DOMContentLoaded', () => {
+            const avatars = document.querySelectorAll('.asoc-avatar img');
+            if (avatars.length === 0) return;
+            
+            const modal = document.createElement('div');
+            modal.className = 'avatar-modal';
+            modal.innerHTML = '<img id="avatar-modal-img" src="" alt="">';
+            document.body.appendChild(modal);
+            
+            const modalImg = modal.querySelector('img');
+
+            avatars.forEach(img => {
+                img.addEventListener('mouseenter', (e) => {
+                    modalImg.src = e.target.src;
+                    modal.classList.add('active');
+                });
+                
+                img.addEventListener('mouseleave', () => {
+                    modal.classList.remove('active');
+                });
+            });
         });
     </script>
 </body>

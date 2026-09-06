@@ -2339,7 +2339,8 @@ ul {
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    pointer-events: none;
+    pointer-events: auto; /* Permitir tap en movil para cerrar */
+    cursor: pointer;
 }
 .avatar-modal.active {
     display: block;
@@ -2354,4 +2355,23 @@ ul {
 @keyframes fadeIn {
     from { opacity: 0; transform: translate(-50%, -45%); }
     to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@media (max-width: 600px) {
+    .asoc-item {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .asoc-n {
+        min-width: auto !important;
+        flex: 1 1 100%;
+        margin-bottom: 0.2rem;
+    }
+    .asoc-avatar {
+        margin: 0 10px 0 0;
+    }
+    .avatar-modal img {
+        width: 240px;
+        height: 300px;
+    }
 }

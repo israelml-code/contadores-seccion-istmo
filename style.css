@@ -2346,10 +2346,10 @@ ul {
     animation: fadeIn 0.2s ease-out;
 }
 .avatar-modal img {
-    max-width: 350px;
-    max-height: 350px;
+    width: 280px;
+    height: 350px;
     border-radius: 8px;
-    object-fit: contain;
+    object-fit: cover;
 }
 @keyframes fadeIn {
     from { opacity: 0; transform: translate(-50%, -45%); }

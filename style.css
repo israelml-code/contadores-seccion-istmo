@@ -2294,3 +2294,35 @@ ul {
     .registro-cta-banner { flex-direction: column; text-align: center; }
     .registro-cta-left { flex-direction: column; text-align: center; }
 }
+
+/* Avatares de asociados */
+.asoc-item {
+    display: flex;
+    align-items: center;
+}
+
+.asoc-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: #f3f4f6;
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 1px solid rgba(201,168,76,0.3);
+}
+
+.asoc-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.asoc-avatar.placeholder svg {
+    width: 20px;
+    height: 20px;
+    fill: #9ca3af;
+}
